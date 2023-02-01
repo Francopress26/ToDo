@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todo.css">
+
+    <title>Document</title>
+</head>
+<body >
+    <nav>
+        <div></div>
+        <h1>TO DO</h1>
+        <button id="open-menu">OPEN</button>        
+    </nav>
+
+
+    <aside class="aside asideHide">
+        <div class="aside-title">
+            <p class="p-aside">MENÚ</p>
+            <button id="closeBTN">X</button>            
+        </div>
+        <div class="aside-div">
+            
+            <span class="span-aside"><a>Archivadas</a></span>
+            <span class="span-aside"><a>Pomodoro Timer</a></span>
+            <span class="span-aside"><a>Seccion de notas</a></span>
+        </div>
+
+        <div class="user-aside">
+            <img src="./assets/male.png" height="50px" width="50px"/> 
+            <p>Username</p>
+        </div>
+
+    </aside>
+    <main class="main">
+
+        <div class="div-list">
+            <div>
+                <h2>Por hacer</h2>
+
+                <ul id="por-hacer">
+             
+                </ul>
+            </div>
+       
+            <form id="form-xhacer" class="form-hacer">
+                <input type="text"  id="texto-xhacer"/>
+                <button class="button-add" type="submit">Añadir</button>
+            </form>
+        </div>
+
+
+        <div class="div-list">
+            <div>
+                <h2>En proceso</h2>
+                <ul id="ul-proceso">
+                 
+                
+                </ul>
+            </div>
+          
+            <form id="form-proceso">
+                <input type="text"  id="texto-proceso"/>
+                <button class="button-add" type="submit" id="btn-Proceso">Añadir</button>
+            </form>
+        </div>
+
+        <div class="div-list">
+            <div>
+                <h2>Hechas</h2>
+
+                <ul id="ul-hechas">
+    
+                </ul>
+            </div>
+         
+            <form id="form-hechas">
+                <input type="text"  id="texto-hechas"/>
+                <button  class="button-add" type="submit" id="btn-Hechas">Añadir</button>
+            </form>
+        </div>
+
+
+
+       
+
+    </main>
+    <script src="./todo.js"></script>
+
+</body>
+</html>
